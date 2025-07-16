@@ -22,8 +22,15 @@
 </head>
 
 <body>
-    <header class="header">
 
+    <!-- Кнопка -->
+    <button class="music-btn" id="musicToggle">
+        🎧 Включить музыку
+    </button>
+    
+    <!-- Музыка -->
+    <audio id="bgMusic" src="jessica.mp3" loop></audio>
+    <header class="header">
 
         <a href="https://wa.me/9720542330553" class="icon-link clockwise whatsapp" target="_blank">
             <i class="fab fa-whatsapp"></i></a>
@@ -35,6 +42,11 @@
         <a href="https://maps.app.goo.gl/KbifaKUdSHRFTa9P8" class="icon-link counter map" target="_blank">
             <i class="fas fa-map"></i></a>
     </header>
+
+<section class="param">
+    <h1>AleNails</h1>
+</section>
+
     <div class="container">
 
         <section class="bg-1">
@@ -66,6 +78,22 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        const musicBtn = document.getElementById("musicToggle");
+            const music = document.getElementById("bgMusic");
+
+            musicBtn.addEventListener("click", () => {
+                music.play();
+                musicBtn.style.opacity = "0";
+                setTimeout(() => musicBtn.style.display = "none", 300);
+            });
+
+            window.addEventListener("beforeunload", () => {
+                    music.pause();
+                    music.currentTime = 0;
+                });
+    </script>
 </body>
 
 </html>
