@@ -4,12 +4,10 @@
 	/* box-sizing: 0; */
 }
 
-html {
-	scroll-behavior: smooth;
-}
+
 
 body {
-	background-color: #272222;
+	background-color: #836a8f;
 }
 
 .header {
@@ -71,6 +69,8 @@ i {
 	color: #ff5733;
 }
 
+
+
 section {
 	display: flex;
 	align-items: center;
@@ -86,62 +86,62 @@ section {
 .bg-1 {
 	background-image: url(img/16.webp);
 	width: 100%;
-	height: 100vh;
+	height: 95vh;
 }
 .bg-2 {
 	background-image: url(img/17.webp);
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
 }
 .bg-3 {
 	background-image: url(img/18.webp);
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 }
 .bg-4 {
 	background-image: url(img/19.webp);
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
 }
 .bg-5 {
 	background-image: url(img/20.webp);
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
 }
 .bg-6 {
 	background-image: url(img/21.webp);
 	width: 100%;
-	height: 100vh;
+	height: 58vh;
 }
 .bg-7 {
 	background-image: url(img/22.webp);
 	width: 100%;
-	height: 100vh;
+	height: 60vh;
 }
 .bg-8 {
 	background-image: url(img/23.webp);
 	width: 100%;
-	height: 100vh;
+	height: 65vh;
 }
 .bg-9 {
 	background-image: url(img/24.webp);
 	width: 100%;
-	height: 100vh;
+	height: 65vh;
 }
 .bg-10 {
 	background-image: url(img/27.webp);
 	width: 100%;
-	height: 100vh;
+	height: 68vh;
 }
 .bg-11 {
 	background-image: url(img/28.webp);
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 }
 .bg-12 {
 	background-image: url(img/29.webp);
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
 }
 .bg-13 {
 	background-image: url(img/30.webp);
@@ -154,6 +154,84 @@ section {
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		font-size: 1vw;
+		/* background-position: bottom; */
+       
 	}
+
+    .param {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0;
+
+    text-shadow:  9px -18px 6px  rgba(0, 0, 0, 0.5);  /* основная тень */
+    /* 1rem -1rem 10px rgba(255, 105, 180, 0.7); розовое сияние */
+};
+}
+.param h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #e4405f;
+}
+
+
+
+@media (max-width: 25rem) {
+    section {
+		background-size: contain;
+		/* background-position: center; */
+		background-repeat: no-repeat;
+		background-position: bottom;
+       
+	}
+
+    .param {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem 0;
+}
+.param h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #f702f7;  
+}
+h1 {
+ box-shadow: 0 0 10px rgb(255, 0, 0);   
+}
+}
+
+
+.music-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+	background-color: #efbd68;
+	border: none;
+	border-radius: 50px;
+	padding: 12px 20px;
+	font-size: 16px;
+	font-family: inherit;
+	cursor: pointer;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s ease, opacity 0.3s;
+}
+
+.music-btn:hover {
+	transform: scale(1.05);
+}
+
+.music-btn:active {
+	transform: scale(0.95);
 }
