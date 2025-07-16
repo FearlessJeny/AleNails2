@@ -59,15 +59,19 @@ i {
 
 .whatsapp {
 	color: #25d366;
+	text-shadow:  6px -10px 6px  #10331dce;
 }
 .facebook {
 	color: #1877f2;
+	text-shadow:  6px -10px 6px  rgba(0, 0, 0, 0.5);
 }
 .instagram {
 	color: #e4405f;
+	text-shadow:  6px -10px 6px  rgba(0, 0, 0, 0.5);
 }
 .map {
 	color: #ff5733;
+	text-shadow:  6px -10px 6px  rgba(0, 0, 0, 0.5);
 }
 
 
@@ -155,7 +159,7 @@ section {
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
-		/* background-position: bottom; */
+		
        
 	}
 
@@ -168,14 +172,15 @@ section {
     justify-content: center;
     margin: 6rem 0;
 
-    text-shadow:  9px -18px 6px  rgba(0, 0, 0, 0.5);  /* основная тень */
-    /* 1rem -1rem 10px rgba(255, 105, 180, 0.7); розовое сияние */
+    text-shadow:  9px -18px 6px  rgba(0, 0, 0, 0.5);  
+   
 };
 }
 .param h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -2rem;
     font-size: 4rem;
     color: #e4405f;
 }
